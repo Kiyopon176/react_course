@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Avatar illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="0.55" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f2947"/>
+      <stop offset="1" stop-color="#101736"/>
+    </linearGradient>
+    <clipPath id="circle"><circle cx="160" cy="160" r="160"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#circle)">
+    <rect width="320" height="320" fill="url(#bg)"/>
+    <circle cx="66" cy="60" r="90" fill="#ffffff" opacity="0.08"/>
+    <circle cx="272" cy="248" r="120" fill="#000000" opacity="0.10"/>
+
+    <!-- shoulders / hoodie -->
+    <path d="M40 320c0-62 54-104 120-104s120 42 120 104z" fill="url(#hoodie)"/>
+    <path d="M132 224c10 18 46 18 56 0l-10-16h-36z" fill="#0b1020" opacity="0.55"/>
+
+    <!-- neck -->
+    <rect x="140" y="184" width="40" height="40" rx="18" fill="#e8b48c"/>
+
+    <!-- head -->
+    <circle cx="160" cy="140" r="58" fill="#f3c6a0"/>
+    <!-- hair -->
+    <path d="M102 138c0-36 26-60 58-60s58 24 58 60c0 6-1 12-3 17-4-26-24-34-55-34-22 0-45 6-53 30-3-4-5-8-5-13z" fill="#221a2e"/>
+    <!-- eyes -->
+    <circle cx="140" cy="142" r="5.5" fill="#1b1430"/>
+    <circle cx="180" cy="142" r="5.5" fill="#1b1430"/>
+    <!-- smile -->
+    <path d="M143 164c8 9 26 9 34 0" stroke="#1b1430" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- headphones -->
+    <path d="M96 146a64 64 0 0 1 128 0" stroke="#22d3ee" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <rect x="86" y="138" width="22" height="38" rx="11" fill="#22d3ee"/>
+    <rect x="212" y="138" width="22" height="38" rx="11" fill="#22d3ee"/>
+  </g>
+</svg>

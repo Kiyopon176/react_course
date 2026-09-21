@@ -1,0 +1,22 @@
+.footer {
+  margin-top: 84px;
+  padding-top: 26px;
+  text-align: center;
+  border-top: 1px solid var(--card-border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 6px 0;
+}
+
+.footer__nick {
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+.footer__built {
+  font-size: 0.82rem;
+  opacity: 0.8;
+}

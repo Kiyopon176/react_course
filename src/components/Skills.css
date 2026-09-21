@@ -1,0 +1,67 @@
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 18px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills__item {
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skills__item:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-2);
+}
+
+.skills__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.skills__name {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.skills__icon {
+  font-size: 1.15rem;
+}
+
+.skills__percent {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.skills__track {
+  height: 9px;
+  border-radius: 999px;
+  background: rgba(127, 137, 180, 0.22);
+  overflow: hidden;
+}
+
+.skills__bar {
+  height: 100%;
+  width: var(--level);
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  animation: skill-grow 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes skill-grow {
+  from { width: 0; }
+  to { width: var(--level); }
+}
