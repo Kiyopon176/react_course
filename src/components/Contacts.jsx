@@ -4,7 +4,7 @@ export default function Contacts({ contacts }) {
   return (
     <section className="section contacts" id="contacts">
       <h2 className="section__title">
-        <span className="section__index">03.</span> Контакты
+        <span className="section__index">04.</span> Контакты
       </h2>
 
       <p className="contacts__note">
