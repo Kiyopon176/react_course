@@ -1,5 +1,8 @@
 .hero {
   position: relative;
+  /* декоративный блик выходит за границы секции — обрезаем, чтобы не появлялся
+     горизонтальный скролл на узких экранах */
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
@@ -36,6 +39,7 @@
   font-size: clamp(2.6rem, 1.8rem + 4vw, 4.4rem);
   line-height: 1.05;
   font-weight: 800;
+  overflow-wrap: break-word;
   background: linear-gradient(120deg, var(--text) 20%, var(--accent) 60%, var(--accent-2));
   -webkit-background-clip: text;
   background-clip: text;
